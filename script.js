@@ -1,4 +1,3 @@
-var _this = this;
 var message = 'hello world';
 console.log(message);
 var addeds = /** @class */ (function () {
@@ -32,7 +31,21 @@ var team = {
     name: 'ram',
     contact: 7896,
     address: function (test) {
-        return _this.name;
+        return name;
     }
 };
 console.log(team.address('london street'));
+function setgeneric(getdata) {
+    return getdata;
+}
+console.log(setgeneric(2));
+console.log(setgeneric('okay'));
+//union
+var uniondata;
+uniondata = 23;
+if (typeof uniondata == 'number') {
+    console.log('number');
+}
+else {
+    console.log('string');
+}

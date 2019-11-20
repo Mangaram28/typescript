@@ -1,4 +1,4 @@
-const message :string= 'hello world';
+const message :string= 'hello';
 
 console.log(message);
 
@@ -58,8 +58,27 @@ let team:data = {
     name:'ram',
     contact:7896,
     address:(test) => {
-        return this.name;
+        return test;
     }
 };
 
 console.log(team.address('london street'));
+
+function setgeneric<T>(getdata : T):T{
+       return getdata;
+}
+
+console.log(setgeneric(2));
+
+console.log(setgeneric('okay'));
+
+//union
+
+let uniondata: string | number ;
+
+uniondata = 23;
+if(typeof uniondata == 'number'){
+    console.log('number');
+}else{
+    console.log('string');
+}
